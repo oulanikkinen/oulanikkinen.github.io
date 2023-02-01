@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 /*
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
+	
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
@@ -83,12 +82,13 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: rgb(255, 255, 255);
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-size: 20pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		/*tekstin väri*/
+		color: #222222;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -104,16 +104,17 @@ input, select, textarea {
 
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-size: 20pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: rgb(180, 180, 180);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
-		line-height: 1.5em;
+		color: #222222;
+		/*Banner tekstin riviväli (ainakin)*/
+		line-height: 2.0em;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -122,7 +123,7 @@ input, select, textarea {
 	}
 
 		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
-			color: #333;
+			color: rgb(24, 24, 24);
 		}
 
 	h2 {
@@ -156,7 +157,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 300;
-		color: #666;
+		color: rgb(23, 23, 23);
 	}
 
 	em, i {
@@ -175,7 +176,8 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #E27689;
+			/*kun valittuna väri*/
+			color: #898989;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1757,7 +1759,7 @@ input, select, textarea {
 		.image.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #f00;
+			background: rgb(40, 40, 40);
 		}
 
 			.image.avatar48 img {
@@ -2048,7 +2050,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background: #222629 url("images/overlay.png");
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
-		color: #fff;
+		color: rgb(255, 255, 255);
 		height: 100%;
 		left: 0;
 		overflow-y: auto;
@@ -2083,7 +2085,8 @@ input, select, textarea {
 		}
 
 			#header .icons a {
-				color: #41484c;
+				/*valikon somenappien väri*/
+				color: rgba(255, 255, 255, 0.5);
 				-moz-transition: color 0.35s ease-in-out;
 				-webkit-transition: color 0.35s ease-in-out;
 				-ms-transition: color 0.35s ease-in-out;
@@ -2091,7 +2094,8 @@ input, select, textarea {
 			}
 
 				#header .icons a:hover {
-					color: #fff;
+					/*valikon somenappien väri kun valittu*/
+					color: #3e91c8;
 				}
 
 	#logo {
@@ -2103,7 +2107,8 @@ input, select, textarea {
 
 		#logo h1 {
 			position: relative;
-			color: #fff;
+			/*otsikkoteksti avatar vieressä*/
+			color: rgba(255, 255, 255, 0.90);
 			font-weight: 600;
 			font-size: 1em;
 			line-height: 1em;
@@ -2137,6 +2142,7 @@ input, select, textarea {
 			#nav ul li a {
 				display: block;
 				padding: 0.5em 1.5em 0.5em 1.5em;
+				/*kuvake tekstien väri kun ei valittu*/
 				color: rgba(255, 255, 255, 0.5);
 				text-decoration: none;
 				outline: 0;
@@ -2156,7 +2162,8 @@ input, select, textarea {
 					#nav ul li a span:before {
 						position: absolute;
 						left: 0;
-						color: #41484c;
+						/*kuvakkeiden väri jos ei valittu*/
+						color: rgba(255, 255, 255, 0.5);
 						text-align: center;
 						width: 1.25em;
 						line-height: 1.75em;
@@ -2169,7 +2176,8 @@ input, select, textarea {
 				}
 
 					#nav ul li a.active span:before {
-						color: #e27689;
+						/*Koti,portfolio nappien väri kun valittu*/
+						color: #3e91c8;
 					}
 
 /* Footer */
@@ -2218,8 +2226,9 @@ input, select, textarea {
 		}
 
 			#main > section.dark {
-				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: #fff;
+				/*Banner tekstin väri*/
+				color: #fff;
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
@@ -2232,12 +2241,14 @@ input, select, textarea {
 				}
 
 				#main > section.dark a {
+					/*Banner "Oula Nikkinen" tekstin väri*/
 					color: #fff;
 					border-color: inherit;
 				}
 
 					#main > section.dark a:hover {
-						border-bottom-color: rgba(255, 255, 255, 0);
+						/*Banner "Oula Nikkinen" tekstin alaviivan väri*/
+						border-bottom-color: rgb(166, 166, 166);
 					}
 
 			#main > section.cover {
@@ -2247,20 +2258,24 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
+				/*Bannerin sivu taustaväri*/
+				background-color: #ffffff;
 				background-image: url("../../images/banner.jpg");
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				/*protfolio sivu taustaväri*/
+				background-color: #ffffff;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				/*Minusta sivu taustaväri*/
+				background-color: #ffffff;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				/*Yhteydenotto sivu taustaväri*/
+				background-color: #ffffff;
 			}
 
 /* Wide */
